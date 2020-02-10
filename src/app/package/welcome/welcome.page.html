@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-grid>
+   <ion-row align-items-center class="full-height ion-text-center">
+     <ion-grid>
+       <ion-row>
+         <ion-col>
+           <ion-button color="primary">
+             About Us
+           </ion-button>
+         </ion-col>
+       </ion-row>
+       <ion-row>
+         <ion-col>
+            <ion-button color="primary"  [routerLink]="['/','package','tabs','packages']">
+              Request For Umra
+            </ion-button>
+         </ion-col>
+       </ion-row>
+     </ion-grid>
+   </ion-row>
+ </ion-grid>
+</ion-content>
