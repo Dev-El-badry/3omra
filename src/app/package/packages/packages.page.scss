@@ -1,0 +1,38 @@
+// .full-height {
+//     height: 82vh !important;
+// }
+
+.custom-style {
+    border: 2px solid var(--ion-color-primary);
+    border-radius: 10px;
+    // width: 249px;
+    text-align: center;
+    margin: 0 auto;
+    height: 115px;
+    /* line-height: 115px; */
+    background: #d9d9d9;
+
+
+    h4 {
+        color: var(--ion-color-primary);
+        font-size: 29px;
+        font-weight: 500;
+    }
+
+    h5 {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--ion-color-dark-tint);
+    }
+
+    
+}
+
+.last-section {
+    p{
+        color: var(--ion-color-dark-tint);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

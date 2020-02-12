@@ -1,39 +1,49 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/package/tabs/welcome"></ion-back-button>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/package/tabs/welcome">
+        <ion-label>Back</ion-label>
+        <ion-icon name="arrow-forward" slot="end"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>Packages</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid size.sm="6" offset.sm="3">
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-header>
-            <ion-img src="/assets/images/img1.jpg"></ion-img>
-            <ion-card-title margin>Umrah In Ramdan</ion-card-title>
-          </ion-card-header>
-          <ion-card-content padding>
-            
-            <h4>$ 150</h4>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-header>
-            <ion-img [src]=""></ion-img>
-          </ion-header>
-          <ion-content padding>
-            <h2>Umrah In Ramdan</h2>
-            <h4>$ 150</h4>
-          </ion-content>
-        </ion-card>
+    <ion-row  align-items-center class="full-height ion-text-center">
+      <ion-col class="ion-align-items-center">
+
+
+
+      <div class="custom-style m-t-40" (click)="onBookingModal('ramadan')">
+        <h5> Umrah In <span class="ramdan-style">Ramadan</span></h5>
+        <h4> $ 750</h4>
+      </div>
+      
+      <div class="custom-style m-t-20 m-b-40" (click)="onBookingModal('non-ramadan')">
+        <h5> Umrah In <span class="ramdan-style">non-Ramadan</span></h5>
+        <h4> $ 500</h4>
+      </div>
+
+
+      <div class="last-section">
+        <p>To Deduct The Amount </p>
+
+        <ion-button color="secondary" fill="outline">
+          
+         
+          <ion-label>
+            <p class="enter-code">Enter The Code</p>
+          </ion-label>
+
+          <ion-icon name="pricetag" class="p-l-10"></ion-icon>
+        </ion-button>
+      </div>
       </ion-col>
     </ion-row>
   </ion-grid>

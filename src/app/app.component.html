@@ -1,3 +1,93 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start"  color="light" class="main-menu">
+    <ion-header >
+      <ion-toolbar>
+        <ion-title >
+          <ion-img src="/assets/images/new-logo.png" class="img-logo"></ion-img>
+        
+        <p class="name-of-user"> Eslam Mahmoud Elbadry</p>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content color="light">
+      <ion-list  color="light" >
+
+          <ion-menu-toggle>
+            <ion-item lines="none" color="light" routerLink="/package/tabs/welcome">
+              <ion-icon name="home" slot="start"></ion-icon>
+              <ion-label>Home</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item lines="none" color="light"  routerLink="/auth">
+                <ion-icon name="person" slot="start"></ion-icon>
+                <ion-label>Profile</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
+
+          <ion-menu-toggle>
+            <ion-item lines="none" color="light" routerLink="/package/tabs/packages">
+              <ion-icon name="search" slot="start"></ion-icon>
+              <ion-label>Discover Packages</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle>
+            <ion-item lines="none" color="light" routerLink="/booking">
+              <ion-icon name="pricetags" slot="start"></ion-icon>
+              <ion-label>Your Requests</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item lines="none" color="light"  routerLink="/package/tabs/notifications">
+                <ion-icon name="notifications" slot="start"></ion-icon>
+                <ion-label>Notifications</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle>
+              <ion-item lines="none" color="light">
+                <ion-icon name="clipboard" slot="start"></ion-icon>
+                <ion-label>Usage Agreement</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
+     
+
+            <ion-menu-toggle>
+              <ion-item lines="none" color="light">
+                <ion-icon name="megaphone" slot="start"></ion-icon>
+                <ion-label>Privacy policy</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none" color="light" >
+            <ion-icon name="call" slot="start"></ion-icon>
+            <ion-label>Connect with us</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item lines="none" color="light">
+            <ion-icon name="cog" slot="start"></ion-icon>
+            <ion-label>Settings</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+
+
+        <ion-menu-toggle>
+          <ion-item lines="none" color="light">
+            <ion-icon name="exit" slot="start"></ion-icon>
+            <ion-label>Sign Out</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
 </ion-app>
